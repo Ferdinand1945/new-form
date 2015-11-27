@@ -1,0 +1,79 @@
+body {
+    margin: 0 auto;
+    background-color: rgba(93,91,94, 0.7);
+    font-family: "Helvetica Neue","HelveticaNeueLTStd-Roman",Helvetica,Arial,sans-serif;
+}
+button {
+    margin: 7px;
+    padding: 7px;
+    min-width: 20%;
+    background-color: #853cc3;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+form {
+    max-width: 400px;
+}
+h1, h2, h3, h4, h5 {
+    color: #fff;
+    margin: 7px;
+}
+
+option {
+    background-color: #fff;
+    color: #000;
+}
+
+/*********** Classes **********/
+.inline {
+    display: inline-block;
+}
+.header {
+    position:relative;
+    padding:5px;
+    margin:0 0 1em;
+    border:5px solid rgba(101, 45, 134, 1);
+    color:#fff;;
+    background:rgba(101, 45, 134, 1);
+}
+.header:before {
+    content:"";
+    position:absolute;
+    bottom:-20px; 
+    left:40px;
+    border-width:20px 20px 0;
+    border-style:solid;
+    border-color:rgba(101, 45, 134, 1) transparent;
+    display:block; 
+    width:0;
+}
+.header:after {
+    content:"";
+    position:absolute;
+    bottom:-13px;
+    left:47px;
+    border-width:13px 13px 0;
+    border-style:solid;
+    border-color:rgba(101, 45, 134, 1) transparent;
+    display:block; 
+    width:0;
+}
+.header.top:after {
+    top:-13px; 
+    bottom:auto;
+    left:auto;
+    right:47px;
+    border-width:0 13px 13px;
+}
+.num {
+    text-align: right;
+}
+@media screen and (max-width: 400px) {
+    button {
+        width: 95%;
+    }
+    input {
+        width: 90%;
+    }
+}
